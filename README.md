@@ -22,22 +22,29 @@ Web Blocker is a PyQt5-based desktop application that allows users to block and 
    ```sh
    git clone https://github.com/yourusername/web-blocker.git
 2. Navigate to the project directory:
-```sh
+   ```sh
 cd web-blocker
+
 3. Install the required dependencies:
+   ```sh
 pip install -r requirements.txt
-4. Usage
+5. Usage
 Run the application:
+   ```sh
 python main.py
 The application will prompt for administrative privileges to modify the hosts file.
 Use the buttons to block or unblock websites, manage blocked websites, or access settings.
 
 File Structure
+   ```sh
 main.py: Main application file.
 blocked_websites.txt: File storing the list of blocked websites.
 style.qss: Stylesheet for the application's UI.
 icons/shield_icon.png: Icon for the application.
-Configuration
+
+## Configuration
+
+   ```sh
 The application allows users to customize the following settings:
 
 Math Problems: Number of math problems required to access certain features.
