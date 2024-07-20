@@ -1,0 +1,92 @@
+QMainWindow {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton#mainButton, QPushButton#dialogButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+QPushButton#blockButton {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+QPushButton#blockButton:hover {
+    background-color: #cc3333;
+}
+
+QPushButton#mainButton:hover, QPushButton#dialogButton:hover {
+    background-color: #4CAF50;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+QLineEdit {
+    background-color: #333;
+    color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+QListWidget {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QDialog {
+    background-color: #2C2C2C;
+}
+
+QComboBox {
+    background-color: #333;
+    color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #333;
+    color: #FFFFFF;
+    border: 1px solid #4CAF50;
+}
+
+QHBoxLayout, QVBoxLayout {
+    background-color: #333;
+}
+
+QGroupBox {
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+}
