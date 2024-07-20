@@ -7,10 +7,9 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QLabel, QLi
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5 import QtCore
 
-# Path and address settings
 hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
 default_redirect_ip = "127.0.0.1"
-blocked_websites_file = "blocked_websites.txt"  # File to store dynamically blocked websites
+blocked_websites_file = "blocked_websites.txt"
 
 languages = {
     "English": {
@@ -91,13 +90,11 @@ class App(QMainWindow):
         self.setWindowTitle(self.language["title"])
         self.setGeometry(100, 100, 400, 500)
 
-        # Create central widget and set layout
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
 
         layout = QVBoxLayout()
 
-        # Add icon and title
         title_layout = QHBoxLayout()
         title_icon = QLabel()
         title_icon.setPixmap(QPixmap("icons/shield_icon.png").scaled(50, 50, QtCore.Qt.KeepAspectRatio))
@@ -109,19 +106,16 @@ class App(QMainWindow):
         title_layout.setAlignment(QtCore.Qt.AlignCenter)
         layout.addLayout(title_layout)
 
-        # Block/Unblock Websites button without icon
         self.block_button = QPushButton(self.language["block_websites"])
         self.block_button.setObjectName("blockButton")
         self.block_button.clicked.connect(self.toggle_blocking)
         layout.addWidget(self.block_button)
 
-        # Settings button without icon
         self.settings_button = QPushButton(self.language["settings"])
         self.settings_button.setObjectName("mainButton")
         self.settings_button.clicked.connect(self.open_settings)
         layout.addWidget(self.settings_button)
 
-        # Manage Websites button without icon
         self.manage_websites_button = QPushButton(self.language["manage_websites"])
         self.manage_websites_button.setObjectName("mainButton")
         self.manage_websites_button.clicked.connect(self.manage_websites)
@@ -134,7 +128,6 @@ class App(QMainWindow):
     def load_stylesheet(self, style_file):
         with open(style_file, "r") as file:
             stylesheet = file.read()
-            # Remove unsupported properties
             stylesheet = stylesheet.replace("cursor:", "")
             stylesheet = stylesheet.replace("transition:", "")
             self.setStyleSheet(stylesheet)
@@ -310,6 +303,7 @@ class App(QMainWindow):
         else:
             self.block_button.setText(self.language["block_websites"])
             self.block_button.setStyleSheet("background-color: #ff6666; color: white;")
+
     def manage_websites(self):
         dialog = QDialog(self)
         dialog.setWindowTitle(self.language["manage_websites"])
