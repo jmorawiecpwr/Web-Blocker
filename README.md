@@ -1,4 +1,3 @@
-```markdown
 # Web Blocker
 
 Web Blocker is a desktop application developed using PyQt5 that enables users to block and unblock websites by modifying the `hosts` file. This application provides a user-friendly interface for managing blocked websites, adjusting settings, and enforcing access control through simple math problems.
