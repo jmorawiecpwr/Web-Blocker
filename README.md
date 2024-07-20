@@ -51,13 +51,13 @@ The application allows users to customize the following settings:
 ## Screenshots
 
 ### Main Screen
-![Main Screen](screenshots/main_screen.png)
+![image](https://github.com/user-attachments/assets/238528bb-f991-45fa-8848-32bad498a02f)
 
 ### Settings
-![Settings](screenshots/settings.png)
+![image](https://github.com/user-attachments/assets/0d8b80a0-37ec-4777-88b5-dcf6447c83a2)
 
 ### Manage Websites
-![Manage Websites](screenshots/manage_websites.png)
+![image](https://github.com/user-attachments/assets/b21cba48-6a2b-49ba-82ce-814e3845b988)
 
 ## Contributing
 
