@@ -1,0 +1,72 @@
+hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
+default_redirect_ip = "127.0.0.1"
+blocked_websites_file = "blocked_websites.txt"
+
+languages = {
+    "English": {
+        "title": "Web blocker",
+        "block_websites": "Block websites",
+        "unblock_websites": "Unblock websites",
+        "settings": "Settings",
+        "manage_websites": "Manage websites",
+        "math_problems": "Enter number of math problems required:",
+        "redirect_ip": "Redirect IP address for blocked websites:",
+        "restore_default": "Restore default",
+        "restore_from_hosts": "Restore from hosts",
+        "error": "Error",
+        "wrong_answer": "Wrong answer. Access denied.",
+        "not_enough_correct": "Not enough correct answers.",
+        "blocking_list_empty": "The blocking list is empty.",
+        "no_website_entered": "No website entered.",
+        "manage_blocked_websites": "Manage blocked websites",
+        "add": "Add",
+        "remove": "Remove",
+        "math_problem": "Math Problem",
+        "solve": "Solve:",
+        "remove_all_matches": "Remove all matching websites"
+    },
+    "Polski": {
+        "title": "Blokada stron",
+        "block_websites": "Blokuj strony",
+        "unblock_websites": "Odblokuj strony",
+        "settings": "Ustawienia",
+        "manage_websites": "Zarządzaj stronami",
+        "math_problems": "Wprowadź liczbę zadań matematycznych:",
+        "redirect_ip": "Adres IP przekierowania dla zablokowanych stron:",
+        "restore_default": "Przywróć domyślne",
+        "restore_from_hosts": "Przywróć z hosts",
+        "error": "Błąd",
+        "wrong_answer": "Zła odpowiedź. Odmowa dostępu.",
+        "not_enough_correct": "Nie wystarczająca liczba poprawnych odpowiedzi.",
+        "blocking_list_empty": "Lista blokowanych stron jest pusta.",
+        "no_website_entered": "Nie wprowadzono strony.",
+        "manage_blocked_websites": "Zarządzaj zablokowanymi stronami",
+        "add": "Dodaj",
+        "remove": "Usuń",
+        "math_problem": "Zadanie matematyczne",
+        "solve": "Rozwiąż:",
+        "remove_all_matches": "Usuń wszystkie pasujące strony"
+    },
+    "Deutsch": {
+        "title": "Webblocker",
+        "block_websites": "Webseiten blockieren",
+        "unblock_websites": "Webseiten entsperren",
+        "settings": "Einstellungen",
+        "manage_websites": "Webseiten verwalten",
+        "math_problems": "Geben Sie die Anzahl der Matheaufgaben ein:",
+        "redirect_ip": "Umleitungs-IP-Adresse für blockierte Webseiten:",
+        "restore_default": "Standard wiederherstellen",
+        "restore_from_hosts": "Aus hosts wiederherstellen",
+        "error": "Fehler",
+        "wrong_answer": "Falsche Antwort. Zugriff verweigert.",
+        "not_enough_correct": "Nicht genügend richtige Antworten.",
+        "blocking_list_empty": "Die Blockierliste ist leer.",
+        "no_website_entered": "Keine Webseite eingegeben.",
+        "manage_blocked_websites": "Verwalten blockierter Webseiten",
+        "add": "Hinzufügen",
+        "remove": "Entfernen",
+        "math_problem": "Matheaufgabe",
+        "solve": "Lösen:",
+        "remove_all_matches": "Alle passenden Webseiten entfernen"
+    }
+}

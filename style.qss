@@ -13,7 +13,6 @@ QPushButton#mainButton, QPushButton#dialogButton {
 }
 
 QPushButton#blockButton {
-    background-color: #ff6666;
     color: white;
     border: none;
     border-radius: 5px;
@@ -33,7 +32,7 @@ QLabel {
     color: #FFFFFF;
     font-size: 20px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
 }
 
 QLineEdit {
@@ -89,4 +88,24 @@ QGroupBox::title {
     color: #FFFFFF;
     background-color: #2C2C2C;
     border-radius: 5px;
+}
+
+QCheckBox {
+    padding: 5px;
+    spacing: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(icons/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(icons/checkbox_checked.png);
 }
