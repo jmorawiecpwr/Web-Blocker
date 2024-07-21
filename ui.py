@@ -235,7 +235,6 @@ class App(QMainWindow):
                 prefixes = ["www", "pl", "en", "de"]
                 websites_to_add.extend([f"{prefix}.{website}" for prefix in prefixes])
             blocked_websites = self.logic.load_blocked_websites()
-            # Check for duplicates
             websites_to_add = [site for site in websites_to_add if site not in blocked_websites]
             if not websites_to_add:
                 QMessageBox.information(self, self.language["error"], f"{website} is already in the list.")
