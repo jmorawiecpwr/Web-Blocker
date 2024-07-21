@@ -2,6 +2,34 @@
 
 Web Blocker is a desktop application developed using PyQt5 that enables users to block and unblock websites by modifying the `hosts` file. This application provides a user-friendly interface for managing blocked websites, adjusting settings, and enforcing access control through simple math problems.
 
+# Patch Log
+
+## v1.1.0 - 2024-07-21
+
+### New Features
+- **Application Icon**: The application now uses its own icon (`app.ico`) for the window and taskbar.
+- **Customizable Removal Behavior**: Added a new setting in the settings dialog to enable or disable the removal of all websites containing a specific phrase. This can be toggled via the "Remove all matching websites" checkbox.
+- **Duplicate Website Check**: The application now prevents adding websites that are already in the blocked list, ensuring no duplicates are added.
+
+### Enhancements
+- **Settings Translation**: Updated the settings to include translations for the new "Remove all matching websites" option in English, Polish, and German.
+
+### Bug Fixes
+- None in this release.
+
+### Technical Improvements
+- Modified the `main.py` to set the application icon during initialization.
+- Updated the `ui.py` to include the new checkbox in the settings dialog and align the checkboxes and labels to the left for better UI consistency.
+- Enhanced the `add_website` method to check for duplicates before adding new websites to the blocked list.
+
+### Known Issues
+- None reported.
+
+### How to Update
+1. Pull the latest changes from the repository.
+2. Install any new dependencies using `pip install -r requirements.txt`.
+3. Rebuild the application using the updated PyInstaller spec file if compiling to an executable.
+
 ## Features
 
 - **Block and Unblock Websites**: Easily manage which websites are blocked or accessible.
