@@ -23,7 +23,7 @@ Web Blocker is a desktop application developed using PyQt5 that enables users to
 - Enhanced the `add_website` method to check for duplicates before adding new websites to the blocked list.
 
 ### Known Issues
-- None reported.
+- Custum URL forwarder can sometimes cause websites unblocking.
 
 ### How to Update
 1. Pull the latest changes from the repository.
